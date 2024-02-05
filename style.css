@@ -1,0 +1,361 @@
+@import url('https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 10px 0;
+}
+
+.logo {
+  font-size: 24px;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff6161;
+}
+
+.hero {
+  background-image: url('https://kocicipolepsovna.cz/wp-content/uploads/2019/12/cute-3347771-scaled.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 150px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero form {
+  display: flex;
+  justify-content: center;
+}
+
+.hero input[type="text"],
+.hero input[type="email"] {
+  height: 40px;
+  width: 300px;
+  border: none;
+  border-radius: 20px;
+  padding: 0 15px;
+  margin-right: 10px;
+}
+
+.hero button {
+  height: 40px;
+  width: 120px;
+  background: #ff6161;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background: #f54747;
+}
+
+.facts {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.fact {
+  margin-bottom: 20px;
+}
+
+.newsletter {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 50px 0;
+}
+
+.newsletter h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.newsletter input[type="email"] {
+  height: 40px;
+  width: 300px;
+  border: none;
+  border-radius: 20px;
+  padding: 0 15px;
+  margin-right: 10px;
+}
+
+.newsletter button {
+  height: 40px;
+  width: 120px;
+  background: #ff6161;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter button:hover {
+  background: #f54747;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact div {
+  margin-right: 10px;
+}
+
+.phone::before {
+  content: "\260E";
+  margin-right: 5px;
+}
+
+.email::before {
+  content: "\2709";
+  margin-right: 5px;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+  color: #ff6161;
+}
+
+/* Адаптивная верстка */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero input[type="text"],
+  .hero input[type="email"] {
+    width: 100%;
+  }
+}
+
+/* Место для стилей слайдера */
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    transition: transform 0.5s;
+  }
+  
+  .author {
+    font-weight: bold;
+  }
+  
+  .pet-photo img {
+    width: 200px;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  .review {
+    margin-bottom: 10px;
+  }
+  
+  .date {
+    color: gray;
+  }
+
+
+  /* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  section.login {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form .login-button {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  form .forgot-password-button {
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 10px;
+  }
+  
+  
+  /* Медиазапрос для мобильных устройств */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    
+    section.login {
+      margin-top: 20px;
+    }
+    
+    h2 {
+      font-size: 24px;
+    }
+    
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+    }
+  }
+
+  .testimonial-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slide {
+    flex-shrink: 0;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .pet-photo {
+    width: 100%;
+    height: auto;
+  }
+  
+  .author-name {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .testimonial-text {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .testimonial-date {
+    font-size: 12px;
+    margin-top: 5px;
+  }
